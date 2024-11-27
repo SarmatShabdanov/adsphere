@@ -42,4 +42,4 @@ def blogger_profile():
     return render_template('/blogger-profile.html')
 
 if __name__ == '__main__':
-  app.run(port=PORT_ENV)
+  app.run(port=5000)
