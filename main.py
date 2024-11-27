@@ -1,5 +1,14 @@
 from flask import Flask,render_template
 from favorite_elements import create_blogger_card
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Access environment variables
+PORT_ENV = os.getenv('PORT')
+print(PORT_ENV)
 
 app = Flask(__name__)
 @app.route("/")
@@ -32,3 +41,5 @@ def login():
 def blogger_profile():
     return render_template('/blogger-profile.html')
 
+if __name__ == '__main__':
+  app.run(port=PORT_ENV)
