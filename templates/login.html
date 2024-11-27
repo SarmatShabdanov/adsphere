@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdSphere</title>
+    <link rel="icon" href="{{url_for('static',filename = './imgs/icon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static',filename = './styles-login.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-contanier">
+        <div class="Header-login-cont">
+            <div class="login-contanier__name">AdSphere</div>
+        <div class="login-contanier__login">
+            <span>Log in</span>
+        </div>
+        
+        </div>
+        <form class="login-contanier__buttons" action="">
+            <input type="email" placeholder="Email Adderss"required>
+            <input type="password" placeholder="Password"required>
+            <button>Log In</button>
+
+        </form>
+        <div class="login-contanier__login_">or login up</div>
+        <div class="login-contanier__other__login">
+            <form action="">
+                <button>
+                    <img src="{{url_for('static',filename = './imgs/Google logo.png')}}" alt="">
+                </button>
+            </form>
+            <form action="">
+                <button>
+                    <img src="{{url_for('static',filename = './imgs/Vector.png')}}" alt="">
+                </button>
+            </form>
+            <form action="">
+                <button>
+                    <img src="{{url_for('static',filename = './imgs/Group.png')}}" alt="">
+                </button>
+            </form>
+            
+        </div>
+        <div class="login-contanier__login_">Have account? <a href="">Log In</a>  </div>
+    </div>
+</body>
+</html>

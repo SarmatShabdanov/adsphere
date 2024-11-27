@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    font-family: Afacad;
+    background-color: #E6E6E6;
+}
+.img-cont{
+    height:25px ;
+    width:25px ;
+}
+.button-contanier{
+    cursor: pointer;
+    font-family: Afacad;
+    background: none; 
+    border: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 144px;
+    height: 36px;
+}
+.button-contanier:hover{
+    background: #000ead21;
+    color:#000EAD ;
+}
+.button-contanier>p{
+    font-size: 20px;
+}
+.content{
+
+    display: flex;
+    
+}
+
+.left-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ffffff;
+    height:910px ;
+    width:146px ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.button-contanier-head{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.button-contanier-bottom{
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.right-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.body-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header-profile{
+    
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-profile >form> button{
+    cursor: pointer;
+    border-radius: 20px;
+    width: 75px;
+    height: 30px;
+}
+.header-profile >form> button >img{
+    
+    width: 20px;
+    height: 20px;
+}
+.header-search__button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+#button-log{
+    background: #2134FF;
+    color: #ffffff;
+}
+
+.body-right-menu{
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    background: #ffffff;
+    width: auto;
+    height: 500px;
+}
+
+
+
+.carosel-body{
+    border-radius: 20px;
+    width: 70vw;
+    height: 200px;
+    
+}
+
+
+#button-messages{
+    width: 30px;
+    height: 30px;
+}
+#button-profile{
+    cursor: pointer;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+}
+.profile-header-cont{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-favorite > h1 > a{
+    color:#000000;
+    text-decoration: none;
+}
+
+.result-favorite-body{
+    background: #ffffff;
+    width: 100%;
+    height: 700px;
+    border-radius: 20px;
+}
+.favorite-content > h1{
+    margin: 0;
+}
+.blogger-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+.blogger-card__buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+    gap: 30px;
+}
+.blogger-card__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    
+}
+.blogger-card_name{
+    display: flex;
+    flex-direction: column;
+}
+.blogger-card__img{
+    width: 100px;
+    height: 100px;
+}
+.blogger-card__button_order{
+    border-radius: 20px;
+    border-color: #2134FF;
+    background:none;
+    height: 45px;
+    width: 150px;
+}
+.blogger-card__button_delete{
+    border-radius: 20px;
+    border:none;
+    background:#E8E8E8;
+    height: 45px;
+    width: 100px;
+}
+
+
+
