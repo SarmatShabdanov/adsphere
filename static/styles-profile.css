@@ -77,12 +77,13 @@ body{
 }
 .header-profile{
     
-    width: 30%;
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: end;
+    gap: 20px;
     align-items: center;
-    
+    padding: 10px;
 }
 .header-profile >form> button{
     cursor: pointer;
@@ -122,7 +123,7 @@ body{
 .carosel-body{
     border-radius: 20px;
     width: 70vw;
-    height: 200px;
+    object-fit: contain;
     
 }
 
@@ -138,11 +139,11 @@ body{
     height: 35px;
 }
 .profile-header-cont{
-    width: 25%;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
 }
 .header-profile > h1 > a{
     color:#000000;
@@ -171,4 +172,26 @@ body{
 }
 
 
-
+@media (max-width: 785px) {
+    
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;   
+    }
+    .header-profile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        
+    }
+    .header-search{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+  
+  }

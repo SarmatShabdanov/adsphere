@@ -3,15 +3,12 @@ body{
     font-family: Afacad;
     display: flex;
     align-items: center;
-    justify-content: end;
-
-    background: url("./imgs/chely.png") top left no-repeat;
-    background-size: cover;
+    justify-content: center;
+    background-color: #4490b4;
+    padding: 40px;
 }
 .sign-contanier{
-    position: fixed;
-    top: 100px;
-    right: 100px;
+    width: 40%;
     border-radius: 20px;
     padding: 20px;
     height: 700px;
