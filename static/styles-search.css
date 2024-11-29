@@ -73,7 +73,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .header-profile{
     
@@ -114,8 +114,8 @@ body{
     justify-content: space-around;
     align-items: start;
     background: #ffffff;
-    width: auto;
-    height: 500px;
+    width: 140px;
+    
 }
 .body-filter-select{
     width: 150px;
@@ -138,7 +138,7 @@ body{
 
 .carosel-body{
     border-radius: 20px;
-    width: 70vw;
+    width: 100%;
     object-fit: contain;
     
 }
@@ -174,7 +174,7 @@ body{
 }
 .result-search-body{
     border-radius: 20px;
-    width: 70vw;
+    width: 100%;
     
     background: #D9D9D9;
     display: flex;
@@ -235,6 +235,8 @@ body{
     align-items: center;
     
 }
+
+
 
 @media (max-width: 785px) {
     

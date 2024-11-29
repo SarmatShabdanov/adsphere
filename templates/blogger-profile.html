@@ -6,6 +6,7 @@
     <title>AdSphere</title>
     <link rel="icon" href="{{  url_for('static',filename = 'imgs/icon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static',filename = './styles-bloggers-profile.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = './left_menu.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -13,63 +14,10 @@
 <body>
     <div class = "content">
 
-        <div class = "left-menu">
+        {{left_menu|safe}}
 
-            <div class="button-contanier-head">
-                <form action="/">
-                    <button class="button-contanier">
-                        <img class="img-cont" src="{{  url_for('static',filename = 'imgs/compass-d.png')}}" alt="">
-                        <p>Home</p>
-                    </button>
-                </form>
-                
-                <form action="/favorite">
-                    <button class="button-contanier">
-                        <img class="img-cont" src=" {{ url_for('static',filename = 'imgs/fav.png')}}" alt="">
-                        <p class="button-cont">Favorite</p>
-                    </button>
-                </form>
-                
-                <form action="/search">
-                    <button class="button-contanier">
-                        <img class="img-cont" src="{{ url_for('static',filename = 'imgs/search.png')}}" alt="">
-                        <p class="button-cont">Search</p>
-                    </button>
-                </form>
-            </div>
-            <form class="button-contanier-bottom" action="/profile">
-                <button class="button-contanier">
-                    <img class="img-cont" src="{{ url_for('static',filename = 'imgs/profile.png')}}" alt="">
-                    <p class="button-cont">Profile</p>
-                </button>
-            </form>
-
-
-
-        </div>
         <div class = "right-menu">
-            <div class="header">
-                <form class="header-search" action="/">
-                    <button class="header-search__button"><h1>AdSphere</h1></button>
-                </form>
-                <div class="header-profile">
-                    <form action="/sign">
-                        <button id = "button-sign">Sign Up</button>
-                    </form>
-                    <form action="/login">
-                        <button id = "button-log">Log In</button>
-                    </form>
-                    
-                    
-                   
-                    <form class="profile-header-cont" action="/profile">
-                        <button id = "button-profile"></button>
-                        <span> Your Name</span>
-                    </form>
-                    
-                   
-                </div>
-            </div>
+            {{header|safe}}
             <div class="body-cont">
                 <div class="body-left-menu">
                     <img class = "carosel-body "src="{{ url_for('static',filename = 'imgs/bloggers.png')}}" alt="">
@@ -92,7 +40,8 @@
                                     <button class="blogger-profile-right__price">~Price</button>
                                 </form>
                                 
-                                <form action="">
+                                <form method="post" action="/add_favorite"> 
+                                    <input hidden value="bruh" name="bloggerId"/>
                                     <button class="blogger-profile-right__favorite">Add to Favorite</button>
                                 </form>
 
@@ -109,8 +58,11 @@
                 </div>
                 
             </div>
+            
 
         </div>
+        {{left_menu_script|safe}}
+
     </div>
     
 </body>

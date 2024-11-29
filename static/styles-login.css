@@ -77,3 +77,41 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
+@media (max-width: 890px) {
+    .login-contanier__login > span{
+        font-size: 30px;
+    }
+    .login-contanier__buttons > button{
+        font-size: 20px;
+        height: 30px;
+    }
+    .login-contanier{
+        width: 100%;
+    }
+    .login-contanier__buttons{
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 511px) {
+    .login-contanier__login > span{
+        font-size: 20px;
+    }
+    .login-contanier__buttons > button{
+        font-size: 10px;
+        height: 20px;
+    }
+    .login-contanier__buttons > button{
+        font-size: 20px;
+        height: 30px;
+    }
+    .login-contanier{
+        width: 100%;
+    }
+    .login-contanier__buttons{
+        width: 100%;
+    }
+  }
+  
+  

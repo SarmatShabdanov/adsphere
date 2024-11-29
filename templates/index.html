@@ -6,6 +6,7 @@
     <title>Ad Sphere</title>
     <link rel="icon" href="{{  url_for('static',filename = 'imgs/icon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static',filename = 'styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'left_menu.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -13,68 +14,10 @@
 <body>
     <div class = "content">
 
-        <div class = "left-menu">
+        {{left_menu|safe}}
 
-            <div class="button-contanier-head">
-                <form action="/">
-                    <button class="button-contanier">
-                        <img class="img-cont" src="{{  url_for('static',filename = 'imgs/compass-d.png')}}" alt="">
-                        <p>Home</p>
-                    </button>
-                </form>
-                
-                <form action="/favorite">
-                    <button class="button-contanier">
-                        <img class="img-cont" src=" {{ url_for('static',filename = 'imgs/fav.png')}}" alt="">
-                        <p class="button-cont">Favorite</p>
-                    </button>
-                </form>
-                
-                <form action="/search">
-                    <button class="button-contanier">
-                        <img class="img-cont" src="{{ url_for('static',filename = 'imgs/search.png')}}" alt="">
-                        <p class="button-cont">Search</p>
-                    </button>
-                </form>
-                
-    
-                
-            </div>
-            
-
-            <form class="button-contanier-bottom" action="/profile">
-                <button class="button-contanier">
-                    <img class="img-cont" src="{{ url_for('static',filename = 'imgs/profile.png')}}" alt="">
-                    <p class="button-cont">Profile</p>
-                </button>
-            </form>
-
-
-
-        </div>
         <div class = "right-menu">
-            <div class="header">
-                <form class="header-search" action="/">
-                    <button class="header-search__button"><h1>AdSphere</h1></button>
-                </form>
-                <div class="header-profile">
-                    <form action="/sign">
-                        <button id = "button-sign">Sign Up</button>
-                    </form>
-                    <form action="/login">
-                        <button id = "button-log">Log In</button>
-                    </form>
-                    
-                    
-                   
-                    <form class="profile-header-cont" action="/profile">
-                        <button id = "button-profile"></button>
-                        <span> Your Name</span>
-                    </form>
-                    
-                   
-                </div>
-            </div>
+           {{header|safe}}
             <div class="body-cont">
                 <div class="body-left-menu">
                     
@@ -95,8 +38,8 @@
                                                 <img src="{{ url_for('static',filename = 'imgs/aigerim-ico.png')}}" alt="">
                                             </div>
                                             <div class="popular-body_names">
-                                                <div class="popular-body__name">Eldana Elmurza</div>
-                                                <div class="popular-body__username">@eldana_foureyes</div>
+                                                <div class="popular-body__name">Aigerim Rasul Kyzy</div>
+                                                <div class="popular-body__username">@aigerim_rasul_kyzy</div>
                                             </div>
                                         </div>
                                         
@@ -111,13 +54,13 @@
                             <form action="/blogger_profile" class="popular-body__form">
                                 <button class="popular-body__contanier__content">
                                     <div class="popular-body_img">
-                                        <img src="{{ url_for('static',filename = 'imgs/aigerim.png')}}" alt="">
+                                        <img src="{{ url_for('static',filename = 'imgs/eldana.png')}}" alt="">
                                     </div>
                                     
                                     <div class="popular-body_info">
                                         <div class="popular-body_info_social_media">
                                             <div class="popular-body_ico">
-                                                <img src="{{ url_for('static',filename = 'imgs/aigerim-ico.png')}}" alt="">
+                                                <img src="{{ url_for('static',filename = 'imgs/eldana-ico.png')}}" alt="">
                                             </div>
                                             <div class="popular-body_names">
                                                 <div class="popular-body__name">Eldana Elmurza</div>
@@ -137,17 +80,17 @@
                             <form action="/blogger_profile" class="popular-body__form" id = "item-bottom-center">
                                 <button class="popular-body__contanier__content">
                                     <div class="popular-body_img">
-                                        <img src="{{ url_for('static',filename = 'imgs/aigerim.png')}}" alt="">
+                                        <img src="{{ url_for('static',filename = 'imgs/samara.png')}}" alt="">
                                     </div>
                                     
                                     <div class="popular-body_info">
                                         <div class="popular-body_info_social_media">
                                             <div class="popular-body_ico">
-                                                <img src="{{ url_for('static',filename = 'imgs/aigerim-ico.png')}}" alt="">
+                                                <img src="{{ url_for('static',filename = 'imgs/samara-ico.png')}}" alt="">
                                             </div>
                                             <div class="popular-body_names">
-                                                <div class="popular-body__name">Eldana Elmurza</div>
-                                                <div class="popular-body__username">@eldana_foureyes</div>
+                                                <div class="popular-body__name">Samara Karimova</div>
+                                                <div class="popular-body__username">@samarakarimovasunger</div>
                                             </div>
                                         </div>
                                         
@@ -186,6 +129,7 @@
             </div>
 
         </div>
+       {{left_menu_script|safe}}
     </div>
     
 </body>
