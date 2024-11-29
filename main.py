@@ -47,7 +47,11 @@ def favorite():
 def add_favorite():
     blogger_id = request.form.get('bloggerId')
     print(blogger_id)
-    return f'<h1>SUKA ${blogger_id}</h1>'
+    left_menu = create_left_menu()
+    left_menu_script = left_menu_create_script()
+    header = create_header()
+    
+    # return render_template("favorite.html",left_menu = left_menu,left_menu_script = left_menu_script,header = header,)  
 @app.route("/sign")
 def sign():
     return render_template('./sign.html')
