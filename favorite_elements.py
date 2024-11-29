@@ -3,7 +3,7 @@ def create_blogger_card():
 
     <div class="blogger-card">
         <div class="blogger-card__info">
-            <img class="blogger-card__img" src={"h"} alt="">
+            <img class="blogger-card__img" src="./static/imgs/mirbek.png" alt="">
                 <div class="blogger-card_name">
                     <span>{'Mirbek'}</span>
                     <a href="">{'@mirbek'}</a>

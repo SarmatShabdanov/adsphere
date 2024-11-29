@@ -28,9 +28,7 @@ body{
     font-size: 20px;
 }
 .content{
-
     display: flex;
-    
 }
 
 .left-menu{
@@ -55,14 +53,11 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-
-
 .right-menu{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 .body-cont{
     display: flex;
@@ -73,11 +68,9 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .header-profile{
-    
-    
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -117,17 +110,11 @@ body{
     width: auto;
     height: 500px;
 }
-
-
-
 .carosel-body{
     border-radius: 20px;
     width: 100%;
     object-fit: contain;
-    
 }
-
-
 #button-messages{
     width: 30px;
     height: 30px;
