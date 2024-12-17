@@ -30,41 +30,42 @@
                         <button>Find</button>
                     </div>
                     <div class="result-search-body__sorting"></div>
-                    <h2>Result Search</h2>
-                    <div class="result-search-body">
-                        <ul class="result-search-body__list">
-                            <li></li>
-                        </ul>
-                       
-                        <div class="body-right-menu">
-                            
-                            <span id = "Filter">Filter</span>
-                            <span>Region</span>
-                            <select class = "body-filter-select">
-                                <option value=""></option>
-                            </select class = "body-filter-select">
-                            <span>Tag</span>
-                            <select class = "body-filter-select">
-                                <option value=""></option>
-                            </select class = "body-filter-select">
-                            <span>Deadline</span>
-                            
-                            <input class = "input-filter"type="date">
-        
-                            <span>Language</span>
-                            <select class = "body-filter-select">
-                                <option value=""></option>
-                            </select>
-                            <span>Price</span>
-                            <input class = "input-filter"type="number">
-                            <span>Company</span>
-                            <select class = "body-filter-select">
-                                <option value=""></option>
-                            </select>
+                    <h2>Search</h2>
+                    <div class="result-search-body-cont">
+                        <div class="result-search-body">
+
+                            <ul class="result-search-body__list">
+                                {% for blogger in bloggers %}
+                                <li>
+                                    <div class="blogger_cont"> 
+                                        <form action="/blogger_profile" class="blogger_form_cont">
+                                            <img id = "img_blogger" src="{{blogger[6]}}" alt="">
+                                            <button class="blogger_profile_button">
+                                                
+                                                <strong>{{blogger[1]}}</strong> 
+                                                <span>Followers: {{blogger[-1]}}</span>
+
+                                            </button>
+                                        </form> 
+                                        
+                                            
+                                      
+                                        
+                                        <form action="" > 
+                                            <input hidden value="{{blogger[0]}}" name="bloggerId"/>
+                                            <button class = "add_to_favorite">Add to Favorite</button>
+                                        </form>
+                                    </div>
+                                    
+                                </li>
+                                {% endfor %}
+                            </ul>
+                           
+                        
                             
                         </div>
-                        
                     </div>
+                   
 
                    
                     

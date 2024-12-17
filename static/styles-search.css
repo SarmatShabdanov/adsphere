@@ -174,12 +174,20 @@ body{
 }
 .result-search-body{
     border-radius: 20px;
-    width: 100%;
-    
+    width: fit-content;
     background: #D9D9D9;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.result-search-body__list{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    list-style-type: none;
+
 }
 #button-messages{
     width: 30px;
@@ -235,9 +243,45 @@ body{
     align-items: center;
     
 }
-
-
-
+#img_blogger{
+    border-radius: 100px;
+    width: 100px;
+}
+.blogger_cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.blogger_profile_button{
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-width: 450px;
+    align-items: center;
+}
+.add_to_favorite{
+    width: 150px;
+    height:50px ;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    background: #1F1FA4;
+}
+.blogger_form_cont{
+    display: flex;
+    flex-direction: row;
+}
+.result-search-body-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 785px) {
     
     .header{
@@ -259,7 +303,16 @@ body{
         justify-content: center;
         
     }
-  
+    .blogger_cont{
+        flex-direction:column ;
+    }
+    .blogger_profile_button{
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+        min-width: 150px;
+    
+    }
   }
   
 
